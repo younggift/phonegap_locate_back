@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>demo</title>
+
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+  </head>
+  <body>
+  <p id="aaa">aaa</p>
+  </body>
+
+<script type="text/javascript" charset="utf-8">
+
+document.addEventListener('deviceready', onDeviceReady, false);
+
+function onDeviceReady() {
+	document.getElementById("log").innerHTML = '<a href="192.168.1.102/apk/remote.html">on_phone-side</a>';
+
+}
+
+function young_log(message)
+{
+	document.getElementById("log").innerHTML += (message + "<p>");
+}	
+    </script>
+ 
+</html>
